@@ -5,7 +5,7 @@
 
 <hr>
 
-<h2>👀Preview</h2>
+<h2>Preview</h2>
 <p align="center">
   <img src="./assets/판넬.png" width="900" />
 </p>
