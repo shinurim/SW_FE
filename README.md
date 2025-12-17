@@ -71,6 +71,7 @@
 <hr>
 
 <h2>🧩Project Structure</h2>
+
 ```
 .
 ├── public/
