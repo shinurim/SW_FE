@@ -1,0 +1,20 @@
+.mypage-grid {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .mypage-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.card form {
+  display: flex;
+  flex-direction: column;
+}
+.card form .btn {
+  margin-top: 16px;
+  align-self: flex-start;
+}

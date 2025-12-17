@@ -1,0 +1,186 @@
+.dashboard-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/* 요약 카드 */
+.summary-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.summary-card-content {
+  display: flex;
+  flex-direction: column;
+}
+.summary-card-title {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+.summary-card-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.1;
+}
+.summary-card-change {
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 10px;
+  display: flex; 
+  align-items: center;
+  gap: 4px;
+}
+/* up일 때 초록색 */
+.summary-card-change.up {
+  color: #22C55E; 
+}
+/* down일 때 빨간색 */
+.summary-card-change.down {
+  color: #EF4444; 
+}
+
+.summary-card-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  opacity: 1.0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.summary-card-icon.purple {
+  background-color: #F3E8FF;
+}
+
+.summary-card-icon.purple svg {
+  color: #9333EA; 
+  stroke-width: 2;
+}
+
+.summary-card-icon.yellow {
+  background-color: #FEF9C3; 
+}
+
+.summary-card-icon.yellow svg {
+  color: #F59E0B; 
+  stroke-width: 2;
+}
+
+.summary-card-icon.green {
+  background-color: #DCFCE7;
+}
+
+.summary-card-icon.green svg {
+  color: #16A34A; 
+  stroke-width: 2;
+}
+
+.summary-card-icon.orange {
+  background-color: #FFEDD5; 
+}
+
+.summary-card-icon.orange svg {
+  color: #F97316; 
+  stroke-width: 2;
+}
+.example-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 20px; 
+}
+
+.example-card-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+.example-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 14px;
+  color: var(--text-secondary);
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+.example-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.example-item-tag {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 6px;
+  color: white;
+  flex-shrink: 0; 
+}
+.example-tag-survey { background-color: #3B82F6; } 
+.example-tag-query { background-color: #F97316; } 
+
+/* 차트 카드 */
+.chart-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 20px;
+}
+.chart-card-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+}
+
+/* 1단 그리드 */
+@media (max-width: 1024px) {
+  .dashboard-cards-grid {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+@media (max-width: 640px) {
+  .dashboard-cards-grid {
+    grid-template-columns: 1fr; 
+  }
+}
+
+.example-item.as-button {
+  display: flex;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 12px 0; 
+  margin: 0;
+  font-family: inherit; 
+  text-align: left; 
+  cursor: pointer;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 14px;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border-color);
+}
+.example-item.as-button:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.example-item.as-button:hover {
+  background: #f1f5ff; 
+  color: var(--primary);
+}
+.example-item.as-button:hover .example-item-tag {
+  color: white;
+}

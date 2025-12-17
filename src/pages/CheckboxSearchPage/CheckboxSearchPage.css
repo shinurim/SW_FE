@@ -1,0 +1,269 @@
+.person-results {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.person-list {
+  flex: 0 0 40%;
+  max-width: 420px;
+  height: 380px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.06);
+  padding: 8px;
+  overflow-y: auto;
+}
+
+.person-row {
+  padding: 8px 10px;
+  border-radius: 10px;
+  margin-bottom: 6px;
+  background: #f9fafb;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease,
+              transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.person-row:hover {
+  background: #eef2ff;
+  border-color: #e5e7eb;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(148, 163, 184, 0.3);
+}
+
+.person-row.active {
+  background: #eef2ff;
+  border-color: #4f46e5;
+}
+
+.person-row-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.person-name {
+  font-weight: 600;
+  font-size: 13px;
+  color: #111827;
+}
+
+.loyalty-score {
+  font-size: 11px;
+  color: #4b5563;
+}
+
+.person-meta {
+  display: block;
+  margin-top: 2px;
+  font-size: 12px;
+  color: #6b7280;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.loyalty-bar {
+  margin-top: 6px;
+  height: 4px;
+  border-radius: 9999px;
+  background: #e5e7eb;
+  overflow: hidden;
+}
+
+.loyalty-fill {
+  display: block;
+  height: 100%;
+  border-radius: 9999px;
+  background: #3b82f6;
+}
+
+.person-detail {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.06);
+  padding: 18px 20px;
+  min-height: 380px;
+}
+
+.detail-identity-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 4px;
+}
+
+.detail-section-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #6b7280;
+  margin: 6px 0 12px;
+}
+
+.detail-kv-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 140px) minmax(0, 1fr);
+  row-gap: 6px;
+  column-gap: 12px;
+}
+
+.detail-row {
+  display: contents; 
+}
+
+.detail-key {
+  font-size: 12px;
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.detail-value {
+  font-size: 13px;
+  color: #111827;
+}
+
+@media (max-width: 900px) {
+  .person-results {
+    flex-direction: column;
+  }
+
+  .person-list {
+    width: 100%;
+    max-width: none;
+    height: 260px;
+  }
+
+  .person-detail {
+    width: 100%;
+  }
+}
+
+/* ===== 필터 카드 ===== */
+.filter-card {
+  background: #fff;
+  border: 1px solid #e2e5f0;
+  border-radius: 32px 32px 0 0;
+  padding: 16px 16px 10px;
+}
+.filter-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.filters {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(210px, 1fr));
+  gap: 10px 14px;
+}
+fieldset {
+  border: 1px solid #e2e5f0;
+  border-radius: 14px;
+  background: #fff;
+  padding: 8px 10px 6px;
+  min-width: 0;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+legend {
+  font-weight: 600;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+.option-group {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  overflow-y: auto;
+  flex: 1 1 auto;
+}
+label {
+  font-size: 12px;
+  display: flex;
+  gap: 6px;
+  align-items: flex-start;
+  cursor: pointer;
+  line-height: 1.25;
+}
+input[type="checkbox"] {
+  accent-color: #2b6ee5;
+  width: 15px;
+  height: 15px;
+  margin-top: 1px;
+}
+.filter-actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.btn-run {
+  background: var(--primary);
+  border: none;
+  color: #fff;
+  border-radius: 10px;
+  padding: 6px 16px 7px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn-run:disabled {
+  background: #c6d5f5;
+  cursor: not-allowed;
+}
+.btn-reset {
+  background: #eef1ff;
+  border: none;
+  color: #2b6ee5;
+  border-radius: 8px;
+  padding: 5px 12px 6px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.summary-bar {
+  font-size: 12px;
+  color: #444;
+}
+.summary-chip {
+  display: inline-block;
+  background: #eef1ff;
+  border-radius: 999px;
+  padding: 3px 10px;
+  margin-right: 6px;
+  margin-bottom: 4px;
+}
+
+/* ===== 결과 카드 ===== */
+.result-card {
+  background: #fff;
+  border: 1px solid #e2e5f0;
+  border-top: none;
+  border-radius: 0 0 32px 32px;
+  padding: 10px 10px 6px;
+  min-height: 240px;
+}
+.result-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4px;
+  border-bottom: 1px solid #f1f2f5;
+  padding-bottom: 6px;
+}
+
+.checkbox-filters-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  padding: 16px;
+  border-bottom: 1px solid var(--border-color);
+}

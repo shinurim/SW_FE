@@ -1,0 +1,187 @@
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--bg-page, #f4f5fb);
+}
+
+.auth-form {
+  background: var(--card-bg, #ffffff);
+  border: 1px solid var(--border-color, #e2e5f0);
+  border-radius: 16px;
+  padding: 32px 40px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.auth-logo {
+  font-weight: 700;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.auth-logo span:nth-child(1) { color: #f7de35; }
+.auth-logo span:nth-child(2) { color: #333; }
+
+.auth-form h2 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text-primary, #1f2431);
+  margin-bottom: 20px;
+}
+
+.auth-form-group {
+  margin-bottom: 16px;
+}
+
+.auth-form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary, #596077);
+  margin-bottom: 6px;
+}
+
+.auth-form-group input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #d9dce5;
+  background: #fcfdff;
+  font-size: 14px;
+}
+.auth-form-group input:focus {
+  outline: none;
+  border-color: var(--primary, #2b6ee5);
+  box-shadow: 0 0 0 2px rgba(43, 110, 229, .15);
+}
+
+.auth-error {
+  color: #EF4444; /* red-500 */
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.auth-button {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  background: var(--primary, #2b6ee5);
+  color: var(--card-bg, #ffffff);
+  transition: filter 0.2s;
+}
+.auth-button:hover {
+  filter: brightness(1.1);
+}
+
+.auth-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  font-size: 13px;
+}
+.auth-links button {
+  background: none;
+  border: none;
+  color: var(--text-secondary, #596077);
+  cursor: pointer;
+  padding: 0;
+}
+.auth-links button:hover {
+  color: var(--primary, #2b6ee5);
+}
+/* src/pages/auth/AuthPages.css */
+/* (기존 스타일 ... ) */
+
+.auth-error {
+  color: #EF4444; /* red-500 */
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+/* --- ▼ [신규] 성공 또는 안내 메시지 ▼ --- */
+.auth-message {
+  color: var(--primary, #2b6ee5);
+  font-size: 13px;
+  text-align: center;
+  background: #f1f5ff;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+/* --- ▲ [신규] 성공 또는 안내 메시지 ▲ --- */
+
+/* --- ▼ [신규] 키워드 UI 스타일 ▼ --- */
+.keyword-input-wrapper {
+  position: relative;
+}
+.keyword-input-wrapper input {
+  /* .auth-form-group input 과 동일한 스타일 */
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #d9dce5;
+  background: #fcfdff;
+  font-size: 14px;
+}
+
+.keyword-suggestions {
+  background: #fff;
+  border: 1px solid #d9dce5;
+  border-radius: 8px;
+  margin-top: 4px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+.suggestion-item {
+  font-size: 13px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+.suggestion-item:hover {
+  background: #f1f5ff;
+}
+
+.keyword-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #eef1ff;
+  color: var(--primary, #2b6ee5);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+.chip button { /* 'x' 버튼 */
+  background: none;
+  border: none;
+  color: var(--primary, #2b6ee5);
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+}
+.form-hint {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-top: 8px;
+}
+/* --- ▲ [신규] 키워드 UI 스타일 ▲ --- */

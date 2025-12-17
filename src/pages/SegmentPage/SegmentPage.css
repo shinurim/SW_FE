@@ -1,0 +1,93 @@
+/* 4개 카드 그리드 */
+.segment-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4열 그리드 */
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/* 세그먼트 카드 */
+/* Segment 페이지 전체 폭 중앙 정렬 */
+.segment-page-container {
+  width: 100%;
+  max-width: 100%;      
+  margin: 0 auto;         
+}
+
+/* 세그먼트 카드 그리드 */
+.segment-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/* 세그먼트 카드 */
+.segment-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.segment-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  border-color: var(--primary);
+}
+
+/* 반응형 */
+@media (max-width: 1024px) {
+  .segment-cards-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 640px) {
+  .segment-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.segment-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.segment-card-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+.segment-card-icon {
+  width: 28px;
+  height: 28px;
+  color: var(--text-light);
+}
+.segment-card-value {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--primary); 
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+.segment-card-actions {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;    
+  gap: 8px;
+}
+
+/* 반응형 */
+@media (max-width: 1024px) {
+  .segment-cards-grid {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+@media (max-width: 640px) {
+  .segment-cards-grid {
+    grid-template-columns: 1fr; 
+  }
+}

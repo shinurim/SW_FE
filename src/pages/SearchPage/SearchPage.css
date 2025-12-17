@@ -1,0 +1,257 @@
+.opinion-box {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr; 
+  gap: 16px;
+}
+
+.opinion-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.opinion-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.opinion-value {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.opinion-value.tag-main {
+  background-color: #DBEAFE; 
+  color: #1D4ED8; 
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-weight: 600;
+  display: inline-block; 
+  width: fit-content; 
+}
+.opinion-value.tag-sub {
+  background-color: #E0E7FF; 
+  color: #3730A3; 
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-weight: 600;
+  display: inline-block;
+  width: fit-content;
+}
+
+.insight-view-wrapper {
+  margin-top: 20px;
+  border: 1px dashed var(--primary);
+  border-radius: 14px;
+  padding: 16px;
+  background: #fdfdff;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 40% 1fr; 
+  gap: 16px;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.insight-stats-list li {
+  margin-bottom: 8px; 
+}
+
+.stats-chart-container {
+  min-width: 220px;
+}
+
+.recharts-legend-item-text {
+  font-size: 13px !important;
+}
+
+@media (max-width: 640px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.insight-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.insight-main-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+  flex: 1; 
+}
+
+.insight-actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0; 
+}
+
+.insight-meta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.insight-keywords {
+  display: flex;
+  gap: 8px;
+}
+
+.insight-keyword-chip {
+  background: #eff6ff;
+  color: var(--primary);
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.insight-columns-info {
+  font-size: 13px;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.insight-divider {
+  border: none;
+  border-top: 1px solid var(--border-color);
+  margin: 0 0 24px 0;
+}
+
+/* 2단 레이아웃 (텍스트 vs 차트) */
+.insight-content-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr; 
+  gap: 32px;
+}
+
+@media (max-width: 1024px) {
+  .insight-content-grid {
+    grid-template-columns: 1fr; 
+  }
+}
+
+.insight-sub-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+  border-left: 4px solid var(--primary);
+  padding-left: 10px;
+}
+
+/* 긴 텍스트 줄바꿈 처리 */
+.insight-long-text {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #333;
+  white-space: pre-wrap; 
+  background: #f8f9fa;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+.chart-card-inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.chart-caption {
+  text-align: center;
+  font-size: 12px;
+  color: #888;
+  margin-top: 12px;
+}
+
+/* 2단 레이아웃 (텍스트 vs 차트) */
+.insight-content-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 32px;
+}
+
+/* 모바일 대응 */
+@media (max-width: 1024px) {
+  .insight-content-grid {
+    grid-template-columns: 1fr; 
+  }
+}
+
+.insight-long-text {
+  white-space: pre-wrap;
+  background: #f8f9fa;
+  padding: 16px;
+  border-radius: 8px;
+  line-height: 1.7;
+}
+
+.chart-card-inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 로딩 화면 스타일 */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+  width: 100%;
+  height: 100%; 
+  min-height: 300px; 
+}
+
+.loading-gif {
+  width: 80px; 
+  height: 80px;
+  margin-bottom: 16px;
+}
+
+.loading-text {
+  font-size: 16px;
+  color: var(--text-secondary);
+  font-weight: 500;
+  animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+.tag-none {
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 14px; 
+  display: inline-block;
+  background-color: #f8f9fa; 
+  color: #ced4da;
+}
