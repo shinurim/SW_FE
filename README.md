@@ -145,22 +145,18 @@
     cd 2025_8_B_FE
   </pre></code>
 
-2.  **Install dependencies:**
-    ```bash
+  <pre><code>#Install dependencies
     npm install
-    ```
-
-3.  **Create a `.env.local` file** in the root of the project and add your environment variables.
-    ```
+  </pre></code>
+  
+  <pre><code>#Create a `.env.local` file** in the root of the project and add your environment variables.
     VITE_API_BASE_URL=http://your-backend-api-url.com
-    ```
+  </pre></code>
 
-4.  **Run the development server:**
-    ```bash
+  <pre><code>#Run the development server
     npm run dev
-    ```
+  </pre></code>
     The application will be available at `http://localhost:5173` (or another port if 5173 is busy).
-
 <hr>
 
 <h2>🔑 Key Features</h2>
