@@ -146,7 +146,7 @@
   <pre><code>#Install dependencies
     npm install
   </pre></code>
-  <pre><code>#Create a `.env.local` file** in the root of the project and add your environment variables.
+  <pre><code>#Create a .env.local file in the root of the project and add your environment variables
     VITE_API_BASE_URL=http://your-backend-api-url.com
   </pre></code>
   <pre><code>#Run the development server
