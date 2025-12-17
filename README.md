@@ -139,24 +139,17 @@
 - npm
 
 ### Installation & Running
-  <pre><code>
-   #Clone the repository (if you haven't already)
+  <pre><code>#Clone the repository
     git clone https://github.com/hansung-sw-capstone-2025-2/2025_8_B_FE.git
     cd 2025_8_B_FE
   </pre></code>
-
-  <pre><code>
-    #Install dependencies
+  <pre><code>#Install dependencies
     npm install
   </pre></code>
-  
-  <pre><code>
-    #Create a `.env.local` file** in the root of the project and add your environment variables.
+  <pre><code>#Create a `.env.local` file** in the root of the project and add your environment variables.
     VITE_API_BASE_URL=http://your-backend-api-url.com
   </pre></code>
-
-  <pre><code>
-    #Run the development server
+  <pre><code>#Run the development server
     npm run dev
   </pre></code>
 <hr>
