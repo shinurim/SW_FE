@@ -139,12 +139,11 @@
 - npm
 
 ### Installation & Running
-
-1.  **Clone the repository (if you haven't already):**
-    ```bash
-    git clone <your-repository-url>
-    cd <repository-directory>
-    ```
+  <pre><code>
+   #Clone the repository (if you haven't already):
+    git clone https://github.com/hansung-sw-capstone-2025-2/2025_8_B_FE.git
+    cd 2025_8_B_FE
+  </pre></code>
 
 2.  **Install dependencies:**
     ```bash
