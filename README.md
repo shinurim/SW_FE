@@ -78,8 +78,8 @@
 
 ### Installation & Running
   <pre><code>#Clone the repository
-    git clone https://github.com/hansung-sw-capstone-2025-2/2025_8_B_FE.git
-    cd 2025_8_B_FE
+    git clone https://github.com/shinurim/SW_FE.git
+    cd SW_FE
   </pre></code>
   <pre><code>#Install dependencies
     npm install
