@@ -67,7 +67,29 @@
 *   **HTTP Client:** [Axios](https://axios-http.com/)
 *   **Charting:** [Recharts](https://recharts.org/)
 *   **Linting:** [ESLint](https://eslint.org/)
+<hr>
 
+<h2>🚀 Getting Started</h2>
+
+### Prerequisites
+
+- Node.js (v18.x or higher recommended)
+- npm
+
+### Installation & Running
+  <pre><code>#Clone the repository
+    git clone https://github.com/hansung-sw-capstone-2025-2/2025_8_B_FE.git
+    cd 2025_8_B_FE
+  </pre></code>
+  <pre><code>#Install dependencies
+    npm install
+  </pre></code>
+  <pre><code>#Create a .env.local file in the root of the project and add your environment variables
+    VITE_API_BASE_URL=http://your-backend-api-url.com
+  </pre></code>
+  <pre><code>#Run the development server
+    npm run dev
+  </pre></code>
 <hr>
 
 <h2>🧩Project Structure</h2>
@@ -125,33 +147,8 @@
 ├── .gitignore
 ├── index.html
 ├── package.json
-├── vite.config.js
-└── README.md
+└── vite.config.js
 ```
-
-<hr>
-
-<h2>🚀 Getting Started</h2>
-
-### Prerequisites
-
-- Node.js (v18.x or higher recommended)
-- npm
-
-### Installation & Running
-  <pre><code>#Clone the repository
-    git clone https://github.com/hansung-sw-capstone-2025-2/2025_8_B_FE.git
-    cd 2025_8_B_FE
-  </pre></code>
-  <pre><code>#Install dependencies
-    npm install
-  </pre></code>
-  <pre><code>#Create a .env.local file in the root of the project and add your environment variables
-    VITE_API_BASE_URL=http://your-backend-api-url.com
-  </pre></code>
-  <pre><code>#Run the development server
-    npm run dev
-  </pre></code>
 <hr>
 
 <h2>🔑 Key Features</h2>
